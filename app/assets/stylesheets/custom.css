@@ -1,0 +1,60 @@
+#top-content {
+
+    background-color: #DBD7D2;
+    height: 300px;
+}
+.header {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.subheader {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+}
+    
+.nav-dl {
+    width: 50%;
+    margin: auto;
+}
+
+.nav-dd {
+    padding: auto;
+}
+
+#site-subnav {
+    margin: auto;
+    background-color: black;
+    height: 45px;
+}
+
+#subnav-links {
+    display: block;
+    margin: auto;
+}
+
+li {
+    display: block;
+    width: 27%;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+#bottom-content {
+    height: 100%;
+    background-color: white;
+}
+
+.app-icon {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 10px;
+}
+
+p {
+    padding-left: 10px;
+}
+
