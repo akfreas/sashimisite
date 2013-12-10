@@ -12,8 +12,45 @@
   </head>
 
   <body>
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="row">
+                <div class="small-12 columns" id="top-content">
+                    <section class="header">
+                        <h2>sashimiblade</h2>
+                    </section>
+                    <section class="subheader">
+                        living and breathing mobile code.
+                    </section>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-12 columns" id="site-subnav">
+                    <div class="row">
+                        <div class="small-8 small-centered columns">
+                            <ul class="inline-list" id="subnav-links">
+                                <li><a href="/work">work</a></li>
+                                <li><a href="/blog">blog</a></li>
+                                <li><a href="/contact">contact</a></li>
+                                <li><a href="/about">about</a></li>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     <%= yield %>
     <%= javascript_include_tag "application" %>
+            <footer class="row">
+                <div class="large-12 columns">
+                    <div class="row">
+                        <div class="large-6 columns">
+                            Copyright <%= Time.now.year %>.
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
   </body>
 </html>
