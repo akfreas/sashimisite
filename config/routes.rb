@@ -1,6 +1,9 @@
 Sashimisite::Application.routes.draw do
 
-    root 'welcome#index'
+    root 'main#index'
+    get 'contact' => 'main#contact'
+    get 'work' => 'main#work'
+    get 'about' => 'main#about'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
