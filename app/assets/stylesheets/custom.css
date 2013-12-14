@@ -34,9 +34,9 @@
     margin: auto;
 }
 
-li {
+.inline-list li {
     display: block;
-    width: 19%;
+    width: 16%;
     text-align: center;
     color: white;
     margin-top: 10px;
@@ -65,3 +65,6 @@ li {
     float: left;
 }
 
+.blog-title {
+
+}
