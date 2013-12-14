@@ -1,0 +1,21 @@
+<div class="small-12 columns">
+    <div class="row">
+        <div class="small-6 columns" style="background-color: green">
+            <div class="panel radius">
+                <h5>Hi.</h5>
+                <p>Find all my musings, notes to myself, and anything I fancy here.  Check out the blog, some of the work I've done,
+                or what I'm about. On Twitter @sashimiblade.</p>
+            </div>
+        </div>
+        <div class="small-6 columns" style="background-color: red">
+            <div class="panel radius">
+                <h2>Recent blog posts</h2>
+            </div>
+            <% @posts.each do |post| %>
+                <div class="panel radius">
+                    <h5><a href="/blog/<%= post.url %>"><%= post.title %></a></h5>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</div>
