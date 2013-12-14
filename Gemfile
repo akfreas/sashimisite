@@ -1,3 +1,4 @@
+ruby "2.0.0"
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -46,4 +47,6 @@ end
 #
 gem 'foundation-rails'
 gem 'rails_12factor', group: :production
-ruby "2.0.0"
+gem "monologue", :git => 'https://github.com/jipiboily/monologue'
+gem 'tinymce-rails', '4.0.11'
+gem 'debugger'
