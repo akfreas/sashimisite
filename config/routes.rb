@@ -6,12 +6,11 @@ Sashimisite::Application.routes.draw do
     get 'about' => 'main#about'
     namespace :blog, path: "blog" do
         get '/' => 'main#index'
-        resources :posts
-        #get "/page/:page", to:  "posts#index", as:  "posts_page"
+        get "*post_url" => "posts#show", as:  "post"
     end
 
 
-    mount Monologue::Engine, at: '/monologue'
+    mount Monologue::Engine, at: '/blog'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
