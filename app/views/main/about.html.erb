@@ -2,8 +2,18 @@
     <div class="small-12 columns">
         <div class="row" id="main-content">
 
-            <div class="small-12 columns">
-                <%= image_tag "profile.jpeg", :class => "profile_image" %><p>My name is Alex Freas, and I call Alexandria, Virginia home along with my wife, Meghan.</p>
+            <div class="small-2 columns">
+            <ul class="about-left-icons">
+
+                <%= image_tag "profile.jpeg", :class => "profile-image th" %>
+            <li><a target="_blank" href="https://github.com/akfreas"><%= image_tag "github-med-black.png" %></a></li>
+            <li><a target="_blank" href="https://twitter.com/sashimiblade"><%= image_tag "twitter_logo_blue.png" %></a></li>
+            <li><a target="_blank" href="http://stackoverflow.com/users/362853/sashimiblade"><%= image_tag "so-icon.png" %></a></li>
+            <li><a target="_blank" href="http://www.linkedin.com/pub/alexander-freas/1b/106/165"><%= image_tag "linkedin.png" %></a></li>
+            </div>
+
+            <div class="small-10 columns">
+                <p>My name is Alex Freas, and I call Alexandria, Virginia home along with my wife, Meghan.</p>
                 <p>I'm currently employed at TaxiMagic, and work on the driver app component to the TaxiMagic service,
                 which allows taxi fleets to boost their ride volume and increase reliability by taking advantage of our in-house booking system provided
                 through the app.</p>
@@ -11,6 +21,7 @@
                 making things that ease the pain of a process or make people's lives easier.</p>
                 <p>I go between Objective-C and Python, using Django to develop any backend I need.</p>
                 <p>When I'm not coding, I'm an aspiring master chef and world traveler.</p> 
+                <h4><%= link_to "View my Résumé", "assets/resume.pdf" %></h4>
             </div>
         </div>
     </div>
