@@ -1,6 +1,20 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #8A96A1;
+}
+
+p {
+    font-family: 'Open Sans', 'sans-serif';
+}
+
 #top-content {
 
-    background-color: #DBD7D2;
+    background: url(/assets/underwater.jpg) no-repeat ;
+    background-size: scale;
     height: 300px;
 }
 .header {
@@ -8,10 +22,18 @@
     padding-top: 100px;
 }
 
+.header h2 {
+    color: white;
+    font-weight:normal;
+    font-family: 'Droid Serif', sans-serif;
+}
+
 .subheader {
+    font-family: 'Play', sans-serif;
     text-align: center;
     font-size: 14px;
     padding-top: 10px;
+    color: white;
 }
     
 .nav-dl {
@@ -25,13 +47,19 @@
 
 #site-subnav {
     margin: auto;
-    background-color: black;
+    background-color: #091529;
     height: 45px;
 }
 
 #subnav-links {
     display: block;
     margin: auto;
+}
+
+#subnav-links a {
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
 }
 
 .inline-list li {
@@ -42,13 +70,18 @@
     margin-top: 10px;
 }
 
+#top-column {
+    background-color: #EBEAEC;
+    min-height:100%;
+}
+
 #main-content {
-    padding: 10px 0px;
+    padding: 25px 0px;
+
 }
 
 #content-row {
     height: 100%;
-    background-color: white;
 }
 
 .app-icon {
@@ -58,6 +91,10 @@
     margin: 0px 15px 0px 10px;
 }
 
+h3.work {
+    border-bottom: 1px solid lightgrey;
+}
+
 .profile_image {
     margin: 10px;
     width: 150px;
@@ -65,6 +102,78 @@
     float: left;
 }
 
+.small-block-grid-3 li {
+    text-align: center;
+    border: 0px solid black;
+}
+
 .blog-title {
 
 }
+.datebox {
+    background-color: grey;
+    height: 100%;
+    text-align: center;
+    padding: 5px;
+    width: 115px;
+}
+
+.datebox-internal {
+    background-color: lightgrey;
+}
+
+.datebox .day  {
+    font-weight: 900;
+    font-size: 40px;
+    display:block;
+}
+
+.datebox p {
+    margin: auto;
+    text-align: center;
+}
+
+.blogtitlebox {
+}
+
+.blogtitlebox h3 {
+    margin: 20px auto;
+    padding-right: 20px;
+}
+
+@media screen and (min-width: 64.063em) {
+    .datebox p {
+    }
+}
+@media screen and (max-width: 64.063em) {
+
+    .links-row {
+        width: 100%
+    }
+
+    .inline-list {
+        width: initial;
+    }
+    .inline-list li {
+        margin: 10px auto;
+    }
+    .datebox {
+        width: 100%;
+        background: none;
+    }
+    .datebox-internal {
+        background: none;
+        float: left;
+    }
+    .datebox .day {
+        display: inline;
+        font-size: 16px;
+        font-weight: normal;
+    }
+    
+    .datebox .date {
+        display: inline;
+        margin: auto 5px;
+    }
+}
+
