@@ -1,5 +1,157 @@
 <div class="small-12 columns">
     <div class="row" id="main-content">
+
+            <div class="row">
+            <div class="small-2 columns">
+            <ul class="about-left-icons">
+
+                <%= image_tag "profile.jpeg", :class => "profile-image th" %>
+            <li><a target="_blank" href="https://github.com/akfreas"><%= image_tag "github-med-black.png" %></a></li>
+            <li><a target="_blank" href="https://twitter.com/sashimiblade"><%= image_tag "twitter_logo_blue.png" %></a></li>
+            <li><a target="_blank" href="http://stackoverflow.com/users/362853/sashimiblade"><%= image_tag "so-icon.png" %></a></li>
+            <li><a target="_blank" href="http://www.linkedin.com/pub/alexander-freas/1b/106/165"><%= image_tag "linkedin.png" %></a></li>
+            </div>
+
+                <div class="small-8 columns panel" id="aboutbox">
+                    <p>My name is Alex Freas, and I call Alexandria, Virginia home along with my wife, Meghan.</p>
+                    <p>I'm currently employed at TaxiMagic, and work on the driver app component to the TaxiMagic service,
+                    which allows taxi fleets to boost their ride volume and increase reliability by taking advantage of our in-house booking system provided
+                    through the app.</p>
+                    <p>I have been developing iOS apps in Objective-C since 2011 and it is my passion and obsession to push the limits of my knowledge and skills.  I really enjoy
+                    making things that ease the pain of a process or make people's lives easier.</p>
+                    <p>I go between Objective-C and Python, using Django to develop any backend I need.</p>
+                    <p>When I'm not coding, I'm an aspiring master chef and world traveler.</p> 
+                    <h4><%= link_to "View my Résumé", "assets/resume.pdf" %></h4>
+                </div>
+            </div>
+            <div class="row" id="blogrow">
+                <div class="small-2 columns">
+            <% @posts.each do |post| %>
+                    <div class="large-3 large-offset-1 columns datebox">
+                        <div class="datebox-internal">
+                            <p class="day"><%= post.created_at.strftime "%d" %></p>
+                            <p class="date"><%= post.created_at.strftime "%b '%y" %></p>
+                        </div>
+                    </div>
+            <% end %>
+                </div>
+                <div class="blogtitlebox small-8 columns ">
+                    <% @posts.each do |post| %>
+                        <h3>
+                            <%= link_to post.title, "blog/#{post.url}"  %>
+                        </h3>
+                    <% end %>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="small-8 small-centered columns">
+                <h3 class="work">Work Projects</h1>
+            </div>
+            
+            <div class="small-8 small-centered columns" id="content-row">
+                <div class="row">
+                    <div class="small-2 columns">
+
+                        <a class="th app-icon">
+                            <%= image_tag "drivermagic-icon.png" %>
+                        </a>
+                    </div>
+                    <div class="small-10 columns">
+                        <p class="app-title">TaxiMagic Driver</p>
+                        <p>Driver app component to the TaxiMagic rider app.  Allows drivers to increase their ride volume by accepting
+                        ride requests through the app. (Lead developer)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="small-8 small-centered columns" id="content-row">
+                <div class="row">
+                    <div class="small-2 columns">
+                    <a href="https://github.com/ridecharge/spout" class="th app-icon" target="_new">
+                        <%= image_tag "spout-icon.png" %>
+                    </a>
+                    </div>
+                    <div class="small-10 columns">
+                    <p class="app-title">Spout</p>
+                    <p>In-house mobile app distribution system, written in Python using Django.  Create public and private pages to host
+                    mobile apps for public beta testers, in-house devs and product owners.  Has an upload API to integrate easily with Jenkins
+                    or Travis.  Open source, <a href="https://github.com/ridecharge/spout" target="new">available on Github.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="small-8 small-centered columns" id="content-row">
+                <div class="row">
+                    <div class="small-2 columns">
+                        <a href="" class="th app-icon" target="new">
+                            <%= image_tag "ncaa.png" %>
+                        </a>
+                    </div>
+                    <div class="small-10 columns">
+                        <p class="app-title">NCAA Video App</a>
+                    <p>Contract job. Integrated <a href="http://www.getsocialize.com/" target="new">Socialize Sharing Framework</a> into NCAA Video app, allowing users to share videos, articles, and images through the
+                    Socialze platform.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="small-8 small-centered columns" id="content-row">
+                <div class="row">
+                    <div class="small-2 columns">
+                        <a href="" class="th app-icon" target="new">
+                            <%= image_tag "moviepal.png" %>
+                        </a>
+                    </div>
+                    <div class="small-10 columns">
+                        <p class="app-title">MoviePal</a>
+                    <p>Contract job.  Another Socialize framework integration, though much deeper and more extensive as the app was brought from a non-functional state to a functional one that was released as an update.  Allowed
+                    users to share movies and just about every piece of content in the app through the Socialize platform.  Contributed to Socialize SDK a bit to improve some sharing functionality.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="small-8 small-centered columns">
+                <h3 class="work">Personal Projects</h3>
+            </div>
+            
+            <div class="small-8 small-centered columns" id="content-row">
+                <div class="row">
+                    <div class="small-2 columns">
+                        <a class="th app-icon" href="https://itunes.apple.com/us/app/legacyapp/id722893286?mt=8" target="new">
+                            <img src="http://a2.mzstatic.com/us/r30/Purple/v4/b0/87/ae/b087aee9-ef5f-92d4-f5ae-c1a1c6f9f066/mzl.ybpjqiiu.175x175-75.jpg" >
+                        </a>
+                    </div>
+                    <div class="small-10 columns">
+                        <p class="app-title">LegacyApp</p>
+                        <p>Explore the timelines of prominent historical figures and view their related Wikipedia page.  Links
+                        with your Facebook to explore what someone accomplished at your exact age, to the day!<br/>
+                        <a href="https://itunes.apple.com/us/app/legacyapp/id722893286?mt=8" target="new">Available on iTunes</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="small-8 small-centered columns" id="content-row">
+                <div class="row">
+                    <div class="small-2 columns">
+                        <a class="th app-icon" href="https://itunes.apple.com/us/app/hapto/id550387646?mt=8" target="_new">
+                            <%= image_tag "hapto-icon.png" %>
+                        </a>
+
+                    </div>
+                    <div class="small-10 columns">
+                        <p class="app-title">Hapto</p>
+                        <p>Simple vacation time calculator and tracker.  Determine how much vacation time you have available on a
+                        given date, accounting for recorded vacation time.  Figure out how much time it will take to bounce back
+                        from a negative PTO value.  <br/>
+                        <a href="https://itunes.apple.com/us/app/hapto/id550387646?mt=8" target="_new">Available on iTunes</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="small-6 columns">
             <div class="panel radius">
                 <h5>Hi.</h5>
